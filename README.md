@@ -164,6 +164,10 @@ Arguments:
 
 Please note that the performance of federated adaptation may change from run to run and depends on your hardware (e.g., after refactoring, we tested the code on a different machine and bad3 in most cases improved by 0.10-0.20% roughly)
 
+To run a single client:
+
+``python run.py --nodelist cfgs/single_client.ini``
+
 ## :art: Qualitative Results
 
 In this section, we present illustrative examples that demonstrate the effectiveness of our proposal.
