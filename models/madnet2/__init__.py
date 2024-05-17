@@ -1,0 +1,1 @@
+from .madnet2 import MADNet2

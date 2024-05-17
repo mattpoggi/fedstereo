@@ -1,0 +1,1 @@
+gdown --fuzzy -O weights/ https://drive.google.com/file/d/1ZQP7609nch3wFglnj_IQvy8Hua6sWY0o/view?usp=drive_link
