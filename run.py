@@ -40,7 +40,7 @@ def main():
         if t.sender and server is not None:
             server.link_sending_client(t)
     
-    # Avvio dei thread
+    # Starting threads
     if server is not None:
         server.start()
     for i in range(len(threads)):
