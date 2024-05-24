@@ -95,7 +95,7 @@ For KITTI sequences, please `imagemagick` for converting pngs to jpgs, as well a
 The scripts for preparing data will download several zip files, unpack them and move files all around.
 It will take "a while", so just go around and let them cook :)
 
-Missing some among the above dependecies will cause the following scripts to fail.
+Missing some of the above dependencies will cause the following scripts to fail.
 
 ### :arrow_down: Download Demo Data (DSEC)
 
@@ -105,7 +105,7 @@ You can download from Google Drive the DSEC sequences used in our experiments wi
 
 It will directly store `tar` archives under `sequences/dsec` folder (this requires ~14 GB storage).
 
-Other sequences are too large to host on Google Drive, so we provide scripts to dowload them from the original sources and process them locally (see below).
+Other sequences are too large to host on Google Drive, so we provide scripts to download them from the original sources and process them locally (see below).
 
 ### :arrow_down: Prepare DrivingStereo Data
 
@@ -122,8 +122,8 @@ Run the following script:
 
 ``bash prepare_data/prepare_kitti_raw.sh > /dev/null``
 
-This will download the left, right and groundtruth depth folders from [KITTI]() website, as well as our our pre-computed proxy labels from [Google Drive](https://drive.google.com/file/d/1t9X12cYAQqJ6G8U2-XzO4oca3u2KnsYl/view?usp=sharing). 
-Then, it will convert ``png`` color images into ``jpg`` and groundtruth depth maps into disparity maps, and will prepare ``tar`` archives and will store them under `sequences/kitti_raw/`` folder (this requires >25 GB storage)
+This will download the left, right and groundtruth depth folders from [KITTI]() website, as well as our pre-computed proxy labels from [Google Drive](https://drive.google.com/file/d/1t9X12cYAQqJ6G8U2-XzO4oca3u2KnsYl/view?usp=sharing). 
+Then, it will convert ``png`` color images into ``jpg`` and groundtruth depth maps into disparity maps, and will prepare ``tar`` archives and store them under `sequences/kitti_raw/`` folder (this requires >25 GB storage)
 
 ## :inbox_tray: Pretrained Model
 
@@ -133,11 +133,15 @@ Download pretrained weights by running:
 
 This will store `madnet2.tar` checkpoint under `weights` folder.
 
-At now, we do not plan to release the code for pre-training. If you are interested into training MADNet 2 from scratch, you can insert it in [RAFT-Stereo](https://github.com/princeton-vl/RAFT-Stereo) pipeline and use the `training_loss` defined in `madnet2.py`. Then replace `AdamW` with `Adam` and use the learning rate and scheduling detailed in the supplementary material.
+At now, we do not plan to release the code for pre-training. If you are interested in training MADNet 2 from scratch, you can insert it in [RAFT-Stereo](https://github.com/princeton-vl/RAFT-Stereo) pipeline and use the `training_loss` defined in `madnet2.py`. Then replace `AdamW` with `Adam` and use the learning rate and scheduling detailed in the supplementary material.
 
 ## :memo: Running the Code
 
 Before running experiments with our code, you need to setup a few dependencies and configuration files.
+
+### :hammer_and_wrench: Hardware setup
+
+Federated experiments require up to 4 GPUs (one per client), while one GPU is sufficient for single-domain experiments.
 
 ### :hammer_and_wrench: Dependencies
 
