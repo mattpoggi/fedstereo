@@ -16,7 +16,7 @@ University of Bologna
 
 <h2 align="center"> 
 
-[Project Page](https://fedstereo.github.io/) | [Paper](https://mattpoggi.github.io/assets/papers/poggi2024cvpr.pdf) |  [Supplementary](https://mattpoggi.github.io/assets/papers/poggi2024cvpr_supp.pdf) | [Poster](https://raw.githubusercontent.com/fedstereo/fedstereo.github.io/main/assets/cvpr2024_poster.pdf) 
+[Project Page](https://fedstereo.github.io/) | [Paper](https://mattpoggi.github.io/assets/papers/poggi2024cvpr.pdf) |  [Supplementary](https://mattpoggi.github.io/assets/papers/poggi2024cvpr_supp.pdf) | [Poster](https://mattpoggi.github.io/assets/papers/poggi2024cvpr_poster.pdf) 
 </h2>
 
 <img src="https://fedstereo.github.io/images/teaser_fed.png" alt="Alt text" style="width: 800px;" title="architecture">
